@@ -1,0 +1,470 @@
+.index_header{
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  background: $ff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+
+  & .header_logo {
+    float: left;
+    position: absolute;
+    left: 5%;
+    top: 16px;
+    cursor: pointer;
+
+    & > img{
+      position: absolute;
+      width: 40px;
+      top: -2px;
+      right: 125px;
+      transition: transform 0.2s ease;
+      
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    & > hr{
+      border: 0;
+      position: absolute;
+      border-left: 1px solid #e6e8eb;
+      height: 35px;
+      left: 42px;
+      top: -2px;
+    }
+
+    & > span{
+      font-size: 28px;
+      margin-left: 40px;
+      font-family: 'Satisfy', cursive;
+      font-weight: bold;
+      top: -3px;
+      position: relative;
+      left: 15px;
+      color: $dark;
+    }
+
+  }
+
+  & .right{
+    float: right;
+    position: relative;
+    right: 70px;
+    top: 21px;
+
+    & a{
+      border: 1px solid $ee;
+      outline: none;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+      margin-right: 8px;
+      color: #3d464d;
+      background: $ff;
+      font-weight: 500;
+      transition: all 0.2s ease;
+
+      & a[href='help']{ margin-right: 0px; }
+
+      & .index_header > .right > a[href="about"]{ margin-right: 5px; }
+
+      &:hover{ 
+        background: $second_border;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+
+      &:focus{ background: $second_border; }
+
+    }
+
+  }
+
+}
+
+.display_text {
+  text-align: center;
+	margin-bottom: 30px;
+
+	& > span{
+		font-size: 26px;
+		color: #0b867a;
+    font-weight: 600;
+    font-family: $family-heading;
+	}
+
+}
+
+.cua{
+  width: 320px;
+  @include center;
+
+  & form {
+    background: $ff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  & form > input{
+    display: block;
+    margin-bottom: 14px;
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #e6e8eb;
+    transition: all 0.2s ease;
+    
+    &:focus {
+      border-color: #2895F1;
+      box-shadow: 0 0 0 3px rgba(40, 149, 241, 0.1);
+    }
+  }
+
+  & input[type='submit']{
+      width: 100%;
+      padding: 12px;
+      font-weight: 600;
+      margin-top: 8px;
+  }
+
+  & .forgot_psswrd{
+    text-align: left;
+    margin-top: 14px;
+
+    & > a{
+      font-size: 13px;
+      position: relative;
+      top: -2px;
+      color: #66757f;
+      transition: color 0.2s ease;
+      
+      &:hover {
+        color: $dark;
+      }
+    }
+
+  }
+
+}
+
+.show_psswrd{
+  position: absolute;
+  bottom: 97px;
+  right: 17px;
+  color: darkturquoise;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #0ab5b7;
+  }
+}
+
+// FORGOT PASSWORD
+.forgot_password {
+
+  & .display_text {
+    margin-bottom: 66px;
+  }
+
+  & .fp_span {
+    font-size: 15px;
+  }
+
+  & input[type='email'] {
+    padding: 12px;
+    width: 320px;
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+    border-radius: 8px;
+  }
+
+  & input[type='submit'] {
+    display: inline-block;
+    padding: 10px 24px;
+    width: 140px;
+    border-radius: 8px;
+  }
+
+}
+
+// REGISTER PAGE
+.register {
+  & .small_input {
+    position: relative;
+    width: 123px;
+    display: inline-block;
+  }
+
+  & .s_firstname {
+    margin-right: 5px;
+  }
+
+  & .terms_div {
+    position: relative;
+    margin-bottom: 14px;
+
+    & input[type='checkbox']{
+      position: relative;
+      top: 3px;
+    }
+
+  }
+
+  & .s_p_l {
+    bottom: 81px;
+    right: 17px;
+  }
+
+  & .username_checker {
+    position: absolute;
+    right: -188px;
+    top: 96px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid $ee;
+    background: $fb;
+    display: none;
+    width: 160px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: wheat;
+      transform: rotate(45deg);
+      left: -5px;
+      top: 12px;
+      background: $fb;
+      border-left: 1px solid $ee;
+      border-bottom: 1px solid $ee;
+    }
+
+    & > .checker_icon {
+      position: absolute;
+      margin-left: 4px;
+
+      & > i {
+        font-size: 18px;
+      }
+    }
+
+  }
+
+}
+
+// REGISTERED PAGE
+.registered{
+  position: absolute;
+  background: $ff;
+  padding: 30px 40px;
+  width: 320px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+// WELCOME AND ERROR PAGE
+.welcome_div{
+  @include center;
+  & img{
+    height: 300px;
+  }
+}
+
+// GITHUB STATS ON WELCOME PAGE
+.github-stats {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+// QUICK LOGIN
+.quick_login{
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+
+  & .clear_all_ql{
+    display: block;
+    position: absolute;
+    width: 100%;
+    width: 153px;
+    right: 1px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 5px 15px;
+    top: -45px;
+  }
+
+  & .q_l_div{
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all .2s ease;
+
+    &:hover{
+      transform: translateY(-5px);
+      
+      img {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+    }
+
+    & img{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      transition: all 0.2s ease;
+      
+      &:hover {
+        border-color: #2895F1;
+      }
+    }
+
+  }
+
+}
+
+// QUICK LOGIN MODAL
+.q_l_model{
+  background: #fff;
+  z-index: 3;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 24px;
+  border-radius: 12px;
+  width: 320px;
+  display: none;
+  transition: display .4s;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+
+  & .q_l_m_cancel_div{
+    text-align: right;
+
+    & .q_l_m_cancel{
+      display: inline-block;
+      cursor: pointer;
+      height: 24px;
+      border-radius: 6px;
+      padding: 4px 8px;
+      transition: background 0.2s ease;
+
+      &:hover{
+        background: #f7f5f5;
+      }
+    }
+
+  }
+
+  & .q_l_m_main{
+
+    & .q_l_m_img_div{
+      text-align: center;
+
+      & img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 3px solid #f0f0f0;
+      }
+
+      & .q_l_username{
+        font-weight: 600;
+        font-size: 16px;
+        display: block;
+        margin-top: 8px;
+        color: $dark;
+        font-family: $family-heading;
+      }
+
+    }
+
+    & .q_l_m_form{
+      margin-top: 21px;
+      text-align: center;
+
+      & #q_l_password{
+        display: block;
+        padding: 12px;
+        width: 100%;
+        font-size: 14px;
+        border-radius: 8px;
+        box-sizing: border-box;
+      }
+
+      & input[type="submit"]{
+        padding: 12px 20px;
+        margin-top: 10px;
+        width: 100%;
+        font-size: 14px;
+        border-radius: 8px;
+      }
+
+      & .s_p_ql {
+        bottom: 82px;
+        right: 28px;
+      }
+
+      & .q_l_m_bottom{
+        margin-top: 4px;
+        text-align: left;
+
+        & .q_l_show_psswrd{
+          right: 25px;
+          top: 198px;
+        }
+      }
+
+    }
+
+    & .q_l_remove{
+      position: absolute;
+      top: 16px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 6px;
+      transition: background 0.2s ease;
+      
+      &:hover {
+        background: #f7f5f5;
+      }
+    }
+
+  }
+
+}
+
+.log_sign{
+  position: absolute;
+  right: 50px;
+  top: 88px;
+
+	& > a{
+		padding: 8px 22px;
+		border-radius: 8px;
+		font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    
+    &:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+	}
+
+}

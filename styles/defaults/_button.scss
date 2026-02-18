@@ -1,0 +1,79 @@
+.a_disabled{
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+  background: #6ab9e8 !important;
+}
+
+.sec_btn_disabled{
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+  color: #d8c3c3 !important;
+}
+
+.sec_btn{
+  border: 1px solid $ee;
+  background: $fb;
+  color: $dark;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  outline: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-family: $family;
+  transition: all 0.2s ease;
+
+  &:hover{
+    color: $dark;
+    background-color: #fff7f7;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  &:focus{
+    color: $dark;
+    background: #f7ebeb;
+  }
+
+}
+
+.tir_btn{
+  border: 1px solid $ee;
+  background: $ff;
+  color: $dark;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  outline: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-family: $family;
+  transition: all 0.2s ease;
+
+  &:hover{
+    color: $dark;
+    background-color: #ebf4fd;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  &:focus{
+    color: $dark;
+    background-color: #ebf4fd;
+  }
+
+}
+
+.follow{
+  background: $pric !important;
+  border: 1px solid $pric !important;
+}
+
+.unfollow{
+  background: #6ae03b !important;
+  color: white !important;
+  border: 1px solid #6ae03b !important;
+
+  &:focus{ background: #fbf2f2; }
+
+}

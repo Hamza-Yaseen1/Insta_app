@@ -1,0 +1,788 @@
+/* Black and Golden Theme Override */
+
+/* Color Variables */
+:root {
+  --primary-black: #000000;
+  --secondary-black: #1a1a1a;
+  --dark-gray: #2d2d2d;
+  --gold: #FFD700;
+  --light-gold: #FFC107;
+  --dark-gold: #B8860B;
+  --text-gold: #F4C430;
+  --hover-gold: #FFED4E;
+}
+
+/* Body and Background */
+body {
+  background: var(--primary-black) !important;
+  color: var(--gold) !important;
+}
+
+/* Header */
+.header {
+  background: var(--secondary-black) !important;
+  border-bottom: 2px solid var(--gold) !important;
+  box-shadow: 0 2px 10px rgba(255, 215, 0, 0.3) !important;
+}
+
+.header .logo a img {
+  filter: brightness(0) saturate(100%) invert(73%) sepia(85%) saturate(1000%) hue-rotate(360deg) brightness(104%) contrast(104%);
+}
+
+.header .search_box input[type=text].search {
+  background: var(--dark-gray) !important;
+  color: var(--gold) !important;
+  border: 1px solid var(--dark-gold) !important;
+}
+
+.header .search_box input[type=text].search::placeholder {
+  color: var(--dark-gold) !important;
+}
+
+.header .search_box span.search_icon i {
+  color: var(--gold) !important;
+}
+
+.header .header_right a {
+  color: var(--gold) !important;
+  border-color: var(--secondary-black) !important;
+}
+
+.header .header_right a:hover,
+.header .header_right a:focus,
+.header .header_right .ha_active {
+  background: var(--dark-gray) !important;
+}
+
+.header .header_right .notification {
+  border-color: var(--dark-gold) !important;
+}
+
+/* Sidebar Navigation */
+.m_n_wrapper {
+  background: var(--secondary-black) !important;
+  border-right: 2px solid var(--gold) !important;
+}
+
+.m_n_wrapper .m_n ul li a {
+  color: var(--gold) !important;
+}
+
+.m_n_wrapper .m_n ul li a:hover,
+.m_n_wrapper .m_n ul li a:focus,
+.m_n_wrapper .m_n .sidebar_active {
+  background: var(--dark-gray) !important;
+  color: var(--hover-gold) !important;
+}
+
+.m_n_wrapper .m_n .sidebar_active:before {
+  background: var(--gold) !important;
+}
+
+.m_n_wrapper .m_n_bottom a {
+  color: var(--dark-gold) !important;
+}
+
+.m_n_wrapper .m_n_bottom a:hover {
+  color: var(--gold) !important;
+}
+
+/* Buttons */
+.pri_btn,
+input[type=button],
+input[type=submit] {
+  background: var(--gold) !important;
+  border: 1px solid var(--gold) !important;
+  color: var(--primary-black) !important;
+  font-weight: 700 !important;
+}
+
+.pri_btn:hover,
+input[type=button]:hover,
+input[type=submit]:hover {
+  background: var(--hover-gold) !important;
+  border-color: var(--hover-gold) !important;
+}
+
+.sec_btn {
+  background: var(--dark-gray) !important;
+  border: 1px solid var(--dark-gold) !important;
+  color: var(--gold) !important;
+}
+
+.sec_btn:hover,
+.sec_btn:focus {
+  background: var(--secondary-black) !important;
+  color: var(--hover-gold) !important;
+}
+
+.tir_btn {
+  background: var(--secondary-black) !important;
+  border: 1px solid var(--dark-gold) !important;
+  color: var(--gold) !important;
+}
+
+.tir_btn:hover,
+.tir_btn:focus {
+  background: var(--dark-gray) !important;
+}
+
+/* Input Fields */
+input[type=email],
+input[type=password],
+input[type=text],
+textarea,
+select {
+  background: var(--dark-gray) !important;
+  border: 1px solid var(--dark-gold) !important;
+  color: var(--gold) !important;
+}
+
+input[type=email]::placeholder,
+input[type=password]::placeholder,
+input[type=text]::placeholder,
+textarea::placeholder {
+  color: var(--dark-gold) !important;
+}
+
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=text]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid var(--gold) !important;
+  box-shadow: 0px 0px 5px 1px rgba(255, 215, 0, 0.3) !important;
+}
+
+/* Cards and Containers */
+.modal,
+.pro_avatars,
+.prompt,
+.recomm,
+.mutuals {
+  background: var(--secondary-black) !important;
+  border: 2px solid var(--gold) !important;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.4) !important;
+}
+
+.modal .modal_header,
+.pro_avatars .pro_ava_top,
+.prompt .prompt-top,
+.recomm .recomm_top,
+.mutuals .mutual_info {
+  background: var(--dark-gray) !important;
+  border-bottom: 1px solid var(--dark-gold) !important;
+  color: var(--gold) !important;
+}
+
+.modal .modal_header span.title,
+.pro_avatars .pro_ava_top .pro_ava_info,
+.prompt .prompt-top .prompt-title {
+  color: var(--gold) !important;
+  font-weight: 700 !important;
+}
+
+.modal .modal_middle,
+.modal .modal_bottom,
+.prompt .prompt-middle,
+.prompt .prompt-bottom {
+  background: var(--secondary-black) !important;
+  color: var(--gold) !important;
+}
+
+.modal .modal_bottom,
+.prompt .prompt-bottom {
+  border-top: 1px solid var(--dark-gold) !important;
+}
+
+/* Links */
+a {
+  color: var(--light-gold) !important;
+}
+
+a:hover {
+  color: var(--hover-gold) !important;
+}
+
+.a_pri {
+  color: var(--gold) !important;
+}
+
+/* Options Menu */
+.options {
+  background: var(--secondary-black) !important;
+  border: 1px solid var(--gold) !important;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3) !important;
+}
+
+.options ul li a,
+.options ul li label {
+  background: var(--secondary-black) !important;
+  color: var(--gold) !important;
+}
+
+.options ul li a:hover,
+.options ul li label:hover {
+  background: var(--dark-gray) !important;
+  color: var(--hover-gold) !important;
+}
+
+/* Overlays */
+.overlay {
+  background: var(--primary-black) !important;
+  opacity: 0.85 !important;
+}
+
+/* Search Dropdown */
+.search_div {
+  background: var(--secondary-black) !important;
+  border: 2px solid var(--gold) !important;
+  box-shadow: 0px 0px 25px rgba(255, 215, 0, 0.4) !important;
+}
+
+.search_div .s_header {
+  color: var(--gold) !important;
+}
+
+.search_div .s_d_peo .s_d_p {
+  background: var(--dark-gray) !important;
+  border: 1px solid var(--dark-gold) !important;
+  color: var(--gold) !important;
+}
+
+.search_div .s_d_peo .s_d_p:hover {
+  background: var(--secondary-black) !important;
+  border-color: var(--gold) !important;
+}
+
+/* Recommendations */
+.recomm,
+.mutuals {
+  border: 1px solid var(--dark-gold) !important;
+  background: var(--secondary-black) !important;
+}
+
+.recomm .recomms .recomms_cont a,
+.mutuals .mutual_info span {
+  color: var(--gold) !important;
+}
+
+.recomm .recomms .recomms_cont span {
+  color: var(--dark-gold) !important;
+}
+
+/* Horizontal Rules */
+hr {
+  border-top: 1px solid var(--dark-gold) !important;
+}
+
+/* Text Colors */
+.bold {
+  color: var(--gold) !important;
+}
+
+.hashtag {
+  color: var(--light-gold) !important;
+  font-weight: 700 !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--secondary-black);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hover-gold);
+}
+
+/* Notification Badge */
+.m_n_wrapper .m_n ul li a span.m_n_new {
+  background: var(--gold) !important;
+  color: var(--primary-black) !important;
+  font-weight: 700 !important;
+}
+
+/* Follow/Unfollow Buttons */
+.follow {
+  background: var(--gold) !important;
+  border: 1px solid var(--gold) !important;
+  color: var(--primary-black) !important;
+}
+
+.unfollow {
+  background: var(--dark-gray) !important;
+  border: 1px solid var(--gold) !important;
+  color: var(--gold) !important;
+}
+
+/* Emoji Picker */
+.emoji {
+  background: var(--secondary-black) !important;
+  border: 1px solid var(--gold) !important;
+}
+
+.emoji .emoji_wrapper .emoji_all ul li {
+  background: var(--dark-gray) !important;
+}
+
+.emoji .emoji_wrapper .emoji_all ul li:hover,
+.emoji .emoji_wrapper .emoji_all .emoji_toggle {
+  background: var(--gold) !important;
+}
+
+/* Image Viewer */
+.image_show .img_s_bottom {
+  background: var(--secondary-black) !important;
+  border: 2px solid var(--gold) !important;
+  color: var(--gold) !important;
+}
+
+/* Spinner */
+.spinner span {
+  background: var(--gold) !important;
+}
+
+/* Disabled States */
+input[type=button]:disabled,
+input[type=submit]:disabled,
+.a_disabled {
+  background: var(--dark-gray) !important;
+  color: var(--dark-gold) !important;
+  opacity: 0.5 !important;
+}
+
+/* Range Slider */
+input[type=range]::-webkit-slider-thumb {
+  background: var(--gold) !important;
+  border: 1px solid var(--gold) !important;
+}
+
+input[type=range]::-moz-range-thumb {
+  background: var(--gold) !important;
+  border: 1px solid var(--gold) !important;
+}
+
+input[type=range]::-ms-thumb {
+  background: var(--gold) !important;
+  border: 1px solid var(--gold) !important;
+}
+
+/* Checkbox */
+.inst_checkbox:checked+label:before {
+  color: var(--gold) !important;
+}
+
+/* Landing Page Styles */
+.index_header {
+  background: var(--secondary-black) !important;
+  border-bottom: 2px solid var(--gold) !important;
+}
+
+.index_header .header_logo {
+  color: var(--gold) !important;
+}
+
+.index_header .header_logo img {
+  filter: brightness(0) saturate(100%) invert(73%) sepia(85%) saturate(1000%) hue-rotate(360deg) brightness(104%) contrast(104%);
+}
+
+.index_header .header_logo span {
+  color: var(--gold) !important;
+}
+
+.index_header .right a {
+  color: var(--gold) !important;
+  border: 1px solid var(--dark-gold) !important;
+  background: var(--dark-gray) !important;
+}
+
+.index_header .right a:hover {
+  background: var(--gold) !important;
+  color: var(--primary-black) !important;
+  border-color: var(--gold) !important;
+}
+
+/* Welcome Page */
+.notes_wrapper {
+  background: var(--primary-black) !important;
+}
+
+.welcome_div {
+  background: var(--secondary-black) !important;
+  border: 2px solid var(--gold) !important;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3) !important;
+}
+
+/* Login/Signup Forms */
+.login_wrapper,
+.signup_wrapper {
+  background: var(--secondary-black) !important;
+  border: 2px solid var(--gold) !important;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3) !important;
+}
+
+.login_wrapper h2,
+.signup_wrapper h2 {
+  color: var(--gold) !important;
+}
+
+.login_wrapper label,
+.signup_wrapper label {
+  color: var(--gold) !important;
+}
+
+/* Footer */
+footer {
+  background: var(--secondary-black) !important;
+  border-top: 2px solid var(--gold) !important;
+  color: var(--gold) !important;
+}
+
+footer a {
+  color: var(--light-gold) !important;
+}
+
+footer a:hover {
+  color: var(--hover-gold) !important;
+}
+
+/* Posts and Feed */
+.post_wrapper,
+.post_div,
+.post_item {
+  background: var(--secondary-black) !important;
+  border: 1px solid var(--dark-gold) !important;
+}
+
+.post_header {
+  background: var(--dark-gray) !important;
+  border-bottom: 1px solid var(--dark-gold) !important;
+}
+
+.post_header a,
+.post_header span {
+  color: var(--gold) !important;
+}
+
+.post_footer {
+  background: var(--dark-gray) !important;
+  border-top: 1px solid var(--dark-gold) !important;
+}
+
+.post_footer i {
+  color: var(--gold) !important;
+}
+
+.post_footer i:hover {
+  color: var(--hover-gold) !important;
+}
+
+.post_description {
+  color: var(--gold) !important;
+}
+
+.post_comments {
+  background: var(--secondary-black) !important;
+  color: var(--gold) !important;
+}
+
+/* Profile Page */
+.profile_wrapper {
+  background: var(--primary-black) !important;
+}
+
+.profile_header {
+  background: var(--secondary-black) !important;
+  border: 2px solid var(--gold) !important;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3) !important;
+}
+
+.profile_info {
+  color: var(--gold) !important;
+}
+
+.profile_stats {
+  color: var(--gold) !important;
+}
+
+.profile_stats span {
+  color: var(--light-gold) !important;
+}
+
+.profile_bio {
+  color: var(--gold) !important;
+}
+
+/* Messages */
+.message_wrapper {
+  background: var(--secondary-black) !important;
+  border: 1px solid var(--dark-gold) !important;
+}
+
+.message_item {
+  background: var(--dark-gray) !important;
+  border-bottom: 1px solid var(--dark-gold) !important;
+  color: var(--gold) !important;
+}
+
+.message_item:hover {
+  background: var(--secondary-black) !important;
+}
+
+.message_content {
+  background: var(--secondary-black) !important;
+}
+
+.message_input {
+  background: var(--dark-gray) !important;
+  border-top: 1px solid var(--dark-gold) !important;
+}
+
+/* Notifications */
+.notification_wrapper {
+  background: var(--secondary-black) !important;
+  border: 1px solid var(--dark-gold) !important;
+}
+
+.notification_item {
+  background: var(--dark-gray) !important;
+  border-bottom: 1px solid var(--dark-gold) !important;
+  color: var(--gold) !important;
+}
+
+.notification_item:hover {
+  background: var(--secondary-black) !important;
+}
+
+/* Groups */
+.group_wrapper {
+  background: var(--primary-black) !important;
+}
+
+.group_header {
+  background: var(--secondary-black) !important;
+  border: 2px solid var(--gold) !important;
+}
+
+.group_info {
+  color: var(--gold) !important;
+}
+
+/* Explore Page */
+.explore_wrapper {
+  background: var(--primary-black) !important;
+}
+
+.explore_nav {
+  background: var(--secondary-black) !important;
+  border-bottom: 2px solid var(--gold) !important;
+}
+
+.explore_nav a {
+  color: var(--gold) !important;
+  border-bottom: 3px solid transparent !important;
+}
+
+.explore_nav a:hover,
+.explore_nav a.active {
+  color: var(--hover-gold) !important;
+  border-bottom-color: var(--gold) !important;
+}
+
+/* Photo Gallery */
+.photo_gallery {
+  background: var(--primary-black) !important;
+}
+
+.photo_item {
+  border: 2px solid var(--dark-gold) !important;
+}
+
+.photo_item:hover {
+  border-color: var(--gold) !important;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3) !important;
+}
+
+/* Comments */
+.comment_wrapper {
+  background: var(--secondary-black) !important;
+  border-top: 1px solid var(--dark-gold) !important;
+}
+
+.comment_item {
+  color: var(--gold) !important;
+  border-bottom: 1px solid var(--dark-gold) !important;
+}
+
+.comment_author {
+  color: var(--light-gold) !important;
+  font-weight: 700 !important;
+}
+
+.comment_text {
+  color: var(--gold) !important;
+}
+
+/* Settings Page */
+.settings_wrapper {
+  background: var(--primary-black) !important;
+}
+
+.settings_nav {
+  background: var(--secondary-black) !important;
+  border-right: 2px solid var(--gold) !important;
+}
+
+.settings_nav a {
+  color: var(--gold) !important;
+  border-left: 3px solid transparent !important;
+}
+
+.settings_nav a:hover,
+.settings_nav a.active {
+  background: var(--dark-gray) !important;
+  border-left-color: var(--gold) !important;
+}
+
+.settings_content {
+  background: var(--secondary-black) !important;
+  border: 1px solid var(--dark-gold) !important;
+}
+
+/* Tags */
+.tag {
+  background: var(--dark-gray) !important;
+  color: var(--gold) !important;
+  border: 1px solid var(--dark-gold) !important;
+}
+
+.tag:hover {
+  background: var(--gold) !important;
+  color: var(--primary-black) !important;
+}
+
+/* Badges */
+.badge {
+  background: var(--gold) !important;
+  color: var(--primary-black) !important;
+  font-weight: 700 !important;
+}
+
+/* Tooltips */
+.tooltip {
+  background: var(--secondary-black) !important;
+  border: 1px solid var(--gold) !important;
+  color: var(--gold) !important;
+}
+
+/* Dropdown Menus */
+.dropdown {
+  background: var(--secondary-black) !important;
+  border: 1px solid var(--gold) !important;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3) !important;
+}
+
+.dropdown-item {
+  color: var(--gold) !important;
+}
+
+.dropdown-item:hover {
+  background: var(--dark-gray) !important;
+  color: var(--hover-gold) !important;
+}
+
+/* Dividers */
+.divider,
+.menu_divider {
+  border-top: 1px solid var(--dark-gold) !important;
+}
+
+/* Loading States */
+.loading {
+  color: var(--gold) !important;
+}
+
+/* Error Messages */
+.error {
+  background: var(--secondary-black) !important;
+  border: 2px solid #ff4444 !important;
+  color: #ff6666 !important;
+}
+
+/* Success Messages */
+.success {
+  background: var(--secondary-black) !important;
+  border: 2px solid var(--gold) !important;
+  color: var(--gold) !important;
+}
+
+/* Placeholder Text */
+::placeholder {
+  color: var(--dark-gold) !important;
+  opacity: 0.7 !important;
+}
+
+/* Selection */
+::selection {
+  background: var(--gold) !important;
+  color: var(--primary-black) !important;
+}
+
+::-moz-selection {
+  background: var(--gold) !important;
+  color: var(--primary-black) !important;
+}
+
+/* Focus Outline */
+*:focus {
+  outline-color: var(--gold) !important;
+}
+
+/* Borders */
+.border {
+  border-color: var(--dark-gold) !important;
+}
+
+/* Shadows */
+.shadow {
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3) !important;
+}
+
+/* Text Utilities */
+.text-muted {
+  color: var(--dark-gold) !important;
+}
+
+.text-primary {
+  color: var(--gold) !important;
+}
+
+.text-light {
+  color: var(--light-gold) !important;
+}
+
+/* Background Utilities */
+.bg-primary {
+  background: var(--gold) !important;
+  color: var(--primary-black) !important;
+}
+
+.bg-secondary {
+  background: var(--secondary-black) !important;
+  color: var(--gold) !important;
+}
+
+.bg-dark {
+  background: var(--primary-black) !important;
+  color: var(--gold) !important;
+}

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Instagram UI Components</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/modern-instagram-theme.css">
+  <style>
+    .demo-container {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 40px 20px;
+    }
+
+    .demo-section {
+      margin-bottom: 60px;
+    }
+
+    .demo-section h2 {
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    .demo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .component-showcase {
+      padding: 24px;
+      background: var(--bg-secondary);
+      border-radius: 16px;
+      border: 1px solid var(--border-color);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Dark Mode Toggle -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+    <i class="fas fa-moon" id="themeIcon"></i>
+  </button>
+
+  <div class="demo-container">
+
+    <!-- Header Section -->
+    <div class="demo-section">
+      <h2>Modern Buttons</h2>
+      <div class="component-showcase">
+        <button class="pri_btn" style="margin-right: 12px;">Primary Button</button>
+        <button class="sec_btn" style="margin-right: 12px;">Secondary Button</button>
+        <button class="gradient_btn">Gradient Button</button>
+      </div>
+    </div>
+
+    <!-- Profile Cards -->
+    <div class="demo-section">
+      <h2>Profile Cards</h2>
+      <div class="demo-grid">
+
+        <div class="profile-card hover-lift">
+          <img src="https://i.pravatar.cc/150?img=1" alt="Profile">
+          <div class="name">Sarah Johnson</div>
+          <div class="username">@sarahjohnson</div>
+          <div class="badge badge-primary" style="margin-top: 8px;">Top Student</div>
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-value">1,234</span>
+              <span class="stat-label">Points</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">45</span>
+              <span class="stat-label">Courses</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">892</span>
+              <span class="stat-label">Followers</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-card hover-lift">
+          <img src="https://i.pravatar.cc/150?img=2" alt="Profile">
+          <div class="name">Michael Chen</div>
+          <div class="username">@michaelchen</div>
+          <div class="badge badge-success" style="margin-top: 8px;">Active</div>
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-value">987</span>
+              <span class="stat-label">Points</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">32</span>
+              <span class="stat-label">Courses</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">654</span>
+              <span class="stat-label">Followers</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-card hover-lift">
+          <img src="https://i.pravatar.cc/150?img=3" alt="Profile">
+          <div class="name">Emma Davis</div>
+          <div class="username">@emmadavis</div>
+          <div class="badge badge-warning" style="margin-top: 8px;">Rising Star</div>
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-value">756</span>
+              <span class="stat-label">Points</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">28</span>
+              <span class="stat-label">Courses</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">432</span>
+              <span class="stat-label">Followers</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Ranking Cards -->
+    <div class="demo-section">
+      <h2>Student Rankings</h2>
+      <div class="component-showcase">
+
+        <div class="ranking-card">
+          <div class="rank top-1">1</div>
+          <img src="https://i.pravatar.cc/150?img=4" alt="Student">
+          <div class="info">
+            <div class="name">Alex Thompson</div>
+            <div class="score">2,450 points</div>
+          </div>
+          <div class="badge badge-primary">🏆 Champion</div>
+        </div>
+
+        <div class="ranking-card">
+          <div class="rank top-2">2</div>
+          <img src="https://i.pravatar.cc/150?img=5" alt="Student">
+          <div class="info">
+            <div class="name">Jessica Lee</div>
+            <div class="score">2,180 points</div>
+          </div>
+          <div class="badge badge-success">🥈 Runner-up</div>
+        </div>
+
+        <div class="ranking-card">
+          <div class="rank top-3">3</div>
+          <img src="https://i.pravatar.cc/150?img=6" alt="Student">
+          <div class="info">
+            <div class="name">David Martinez</div>
+            <div class="score">1,920 points</div>
+          </div>
+          <div class="badge badge-warning">🥉 Third Place</div>
+        </div>
+
+        <div class="ranking-card">
+          <div class="rank">4</div>
+          <img src="https://i.pravatar.cc/150?img=7" alt="Student">
+          <div class="info">
+            <div class="name">Sophia Wilson</div>
+            <div class="score">1,750 points</div>
+          </div>
+        </div>
+
+        <div class="ranking-card">
+          <div class="rank">5</div>
+          <img src="https://i.pravatar.cc/150?img=8" alt="Student">
+          <div class="info">
+            <div class="name">James Brown</div>
+            <div class="score">1,620 points</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Progress Bars -->
+    <div class="demo-section">
+      <h2>Progress Indicators</h2>
+      <div class="component-showcase">
+
+        <div style="margin-bottom: 24px;">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+            <span style="font-weight: 600;">JavaScript Mastery</span>
+            <span style="color: var(--text-secondary);">85%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-bar-fill" style="width: 85%;"></div>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 24px;">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+            <span style="font-weight: 600;">React Development</span>
+            <span style="color: var(--text-secondary);">72%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-bar-fill" style="width: 72%;"></div>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 24px;">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+            <span style="font-weight: 600;">Node.js Backend</span>
+            <span style="color: var(--text-secondary);">60%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-bar-fill" style="width: 60%;"></div>
+          </div>
+        </div>
+
+        <div>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+            <span style="font-weight: 600;">Database Design</span>
+            <span style="color: var(--text-secondary);">45%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-bar-fill" style="width: 45%;"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Community Cards -->
+    <div class="demo-section">
+      <h2>Community Cards</h2>
+      <div class="demo-grid">
+
+        <div class="card hover-lift">
+          <div class="card-header">
+            <img src="https://i.pravatar.cc/150?img=9" alt="Community">
+            <div>
+              <div class="username">Web Development</div>
+              <div class="timestamp">1,234 members</div>
+            </div>
+          </div>
+          <p style="color: var(--text-secondary); margin-bottom: 16px;">
+            Learn modern web development with HTML, CSS, JavaScript, and popular frameworks.
+          </p>
+          <button class="pri_btn" style="width: 100%;">Join Community</button>
+        </div>
+
+        <div class="card hover-lift">
+          <div class="card-header">
+            <img src="https://i.pravatar.cc/150?img=10" alt="Community">
+            <div>
+              <div class="username">Data Science</div>
+              <div class="timestamp">892 members</div>
+            </div>
+          </div>
+          <p style="color: var(--text-secondary); margin-bottom: 16px;">
+            Master data analysis, machine learning, and AI with Python and R.
+          </p>
+          <button class="sec_btn" style="width: 100%;">View Details</button>
+        </div>
+
+        <div class="card hover-lift">
+          <div class="card-header">
+            <img src="https://i.pravatar.cc/150?img=11" alt="Community">
+            <div>
+              <div class="username">Mobile Development</div>
+              <div class="timestamp">567 members</div>
+            </div>
+          </div>
+          <p style="color: var(--text-secondary); margin-bottom: 16px;">
+            Build native and cross-platform mobile apps for iOS and Android.
+          </p>
+          <button class="gradient_btn" style="width: 100%;">Explore</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Input Fields -->
+    <div class="demo-section">
+      <h2>Modern Input Fields</h2>
+      <div class="component-showcase">
+        <div style="margin-bottom: 16px;">
+          <label style="display: block; margin-bottom: 8px; font-weight: 600;">Email Address</label>
+          <input type="email" placeholder="Enter your email" style="width: 100%;">
+        </div>
+        <div style="margin-bottom: 16px;">
+          <label style="display: block; margin-bottom: 8px; font-weight: 600;">Password</label>
+          <input type="password" placeholder="Enter your password" style="width: 100%;">
+        </div>
+        <div>
+          <label style="display: block; margin-bottom: 8px; font-weight: 600;">Bio</label>
+          <textarea placeholder="Tell us about yourself..." style="width: 100%; min-height: 100px;"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- Badges -->
+    <div class="demo-section">
+      <h2>Badges & Tags</h2>
+      <div class="component-showcase">
+        <span class="badge badge-primary" style="margin-right: 8px; margin-bottom: 8px;">Premium</span>
+        <span class="badge badge-success" style="margin-right: 8px; margin-bottom: 8px;">Active</span>
+        <span class="badge badge-warning" style="margin-right: 8px; margin-bottom: 8px;">Pending</span>
+        <span class="badge badge-error" style="margin-right: 8px; margin-bottom: 8px;">Expired</span>
+      </div>
+    </div>
+
+    <!-- Glassmorphism -->
+    <div class="demo-section">
+      <h2>Glassmorphism Effect</h2>
+      <div style="background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%); padding: 60px; border-radius: 20px;">
+        <div class="glass" style="padding: 32px; border-radius: 20px; text-align: center;">
+          <h3 style="color: white; margin-bottom: 16px;">Premium Feature</h3>
+          <p style="color: rgba(255,255,255,0.9); margin-bottom: 24px;">
+            Unlock advanced features with our premium plan
+          </p>
+          <button class="pri_btn">Upgrade Now</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Dark Mode Toggle
+    (function () {
+      const themeToggle = document.getElementById('themeToggle');
+      const themeIcon = document.getElementById('themeIcon');
+      const html = document.documentElement;
+
+      const currentTheme = localStorage.getItem('theme') || 'light';
+      html.setAttribute('data-theme', currentTheme);
+      updateIcon(currentTheme);
+
+      themeToggle.addEventListener('click', function () {
+        const theme = html.getAttribute('data-theme');
+        const newTheme = theme === 'light' ? 'dark' : 'light';
+
+        html.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateIcon(newTheme);
+      });
+
+      function updateIcon(theme) {
+        if (theme === 'dark') {
+          themeIcon.className = 'fas fa-sun';
+        } else {
+          themeIcon.className = 'fas fa-moon';
+        }
+      }
+    })();
+  </script>
+
+</body>
+
+</html>

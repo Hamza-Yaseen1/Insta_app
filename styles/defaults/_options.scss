@@ -1,0 +1,46 @@
+.options{
+  position: absolute;
+  padding: 8px;
+  background: $ff;
+  box-shadow: 0 0 0 1px rgba(99,114,130,0.16), 0 8px 16px rgba(27,39,51,0.08);
+  border-radius: 8px;
+  z-index: 1;
+  font-family: $family;
+
+  & ul{
+    background: $ff;
+
+    & > li{
+      background: $ff;
+
+      & a,
+      & label{
+        background: $ff;
+        font-size: 14px;
+        font-family: $family;
+        color: #66757f;
+        padding: 8px 12px;
+        width: inherit;
+        display: block;
+        border-radius: 6px;
+        transition: all 0.2s ease;
+
+        &:hover{
+          background: #54BBFF;
+          color: white;
+        }
+      }
+
+    }
+
+    & .o_divider{
+      margin: 5px 0px 5px 0px;
+
+      & > .menu_divider{
+        border-top-color: #e6e8eb;
+      }
+    }
+
+  }
+
+}
