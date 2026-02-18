@@ -1,6 +1,5 @@
 /**
- * @author Faiyaz Shaikh <www.shtakkar@gmail.com>
- * GitHub repo: https://github.com/yTakkar/React-Instagram-Clone-2.0
+ * @project React-Instagram-Clone-2.0
  */
 
 import { applyMiddleware, combineReducers, createStore } from 'redux'
